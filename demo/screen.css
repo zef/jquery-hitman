@@ -1,0 +1,56 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+
+body { line-height: 1em; color: black; background: #fff; }
+
+ol, ul { list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: separate; border-spacing: 0; vertical-align: middle; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: "" ""; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; }
+
+img a { border: none; }
+
+body { font-family: verdana, "Lucida Grande", "Lucida Sans Unicode", helvetica, arial, sans-serif; }
+
+#container {
+  width: 660px;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-size: 16px;
+  color: white;
+  text-shadow: rgba(0,0,0, 0.4) 1px 1px 1px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 40px 0 20px;
+}
+
+
+#log {
+  margin-top: 1em;
+  font-size: 14px;
+}
+#log p {
+  color: #333;
+  text-shadow: none;
+  padding-bottom: 0.4em;
+}
+
+.red, .blue, .green {
+  margin-bottom: 1em;
+  padding: 0.4em;
+}
+
+.red   { background-color: #CB3625; }
+.blue  { background-color: #4568B2; }
+.green { background-color: #2EAF35; }
+
+a {
+  color: white;
+}
