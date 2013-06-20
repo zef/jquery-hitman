@@ -33,12 +33,16 @@ $(document).hitman({
 
 Or provide the name of a callback to be called on a case by case basis:
 ```html
-<a href="#" data-hitman=".my-container" data-hitman-callback="YourApp.yourCallback">Remove container</a>
+<a href="#" data-hitman=".my-container" data-hitman-callback="YourApp.yourCallback">
+  Remove container and call YourApp.yourCallback()
+</a>
 ```
 
 By default, Hitman is suicidal and destroys its nearest matching containing element using jQuery.closest(). You can have it destroy all matching elements by adding the data-hitman-all attribute:
 ```html
-<a href="#" data-hitman=".my-container" data-hitman-all="true">Remove all matching elements</a>
+<a href="#" data-hitman=".some-class" data-hitman-all="true">
+  Remove all matching elements
+</a>
 ```
 
 You can also choose your own word to use in your data attributes:
@@ -47,7 +51,10 @@ $(document).hitman({
   dataAttribute: 'remove'
 });
 
-// will use data-remove, data-remove-callback, and data-remove-all
+// will use the attributes
+//   data-remove, data-remove-callback, and data-remove-all
+// instead of
+//   data-hitman, data-hitman-callback, and data-hitman-all
 ```
 
 See [the code](https://github.com/zef/jquery-hitman/blob/master/coffeescript/jquery.hitman.coffee) for details.
