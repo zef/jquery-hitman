@@ -6,7 +6,7 @@ A jQuery plugin that makes it easy to target DOM elements for destruction.
 Basic usage
 -----------
 
-Hitman uses HTML data attributes to define behavior. Simply initialize Hitman and add a data attribute to an element. This will cause the containing element with the selector '.my-container' to be removed when the link is clicked.
+Hitman uses HTML data attributes to define behavior. Simply initialize Hitman and add a data attribute to an element. This will cause the containing element with the selector `.my-container` to be removed when the link is clicked.
 
 ```javascript
 $(document).ready(function() {
@@ -38,7 +38,7 @@ Or provide the name of a callback to be called on a case by case basis:
 </a>
 ```
 
-By default, Hitman is suicidal and destroys its nearest matching containing element using jQuery.closest(). You can have it destroy all matching elements by adding the data-hitman-all attribute:
+By default, Hitman is suicidal and destroys its nearest matching containing element using `jQuery.closest()`. You can have it destroy all matching elements by adding the data-hitman-all attribute:
 ```html
 <a href="#" data-hitman=".some-class" data-hitman-all="true">
   Remove all matching elements
