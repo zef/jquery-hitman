@@ -34,7 +34,7 @@ jQuery ($) ->
         element = controller.closest(targetSelector)
 
       callback = controller.data("#{settings.dataAttribute}-callback")
-      methods.executeCallback(callback)
 
       element.remove()
+      methods.executeCallback(callback)
 

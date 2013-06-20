@@ -5,7 +5,7 @@
       var methods, settings;
       settings = $.extend({
         dataAttribute: "hitman",
-        defaultCallback: null
+        callback: null
       }, options);
       methods = {
         executeCallback: function(functionName) {
@@ -13,7 +13,7 @@
           if (functionName != null) {
             callback = methods.functionFromString(functionName);
           } else {
-            callback = settings.defaultCallback;
+            callback = settings.callback;
           }
           if (callback != null) {
             return callback();
@@ -44,8 +44,8 @@
           element = controller.closest(targetSelector);
         }
         callback = controller.data("" + settings.dataAttribute + "-callback");
-        methods.executeCallback(callback);
-        return element.remove();
+        element.remove();
+        return methods.executeCallback(callback);
       });
     };
   });

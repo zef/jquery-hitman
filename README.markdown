@@ -22,7 +22,7 @@ $(document).ready(function() {
 Options
 -------
 
-You can pass a default callback to be called when any element is removed:
+You can pass a default callback to be called after any element is removed:
 ```javascript
 $(document).hitman({
   callback: function() {
